@@ -44,14 +44,17 @@ switch($randomEventIndex){
 		<link rel="stylesheet" type="text/css" href="style.css"/>		
 		<title>Two Armies Assignment</title>
 	</head>
-</html>
 
 <body>
     <?php
-         if($handler1 > 0 && $handler2 > 0){
+        // Loads the results if no error was caused
+         
+        if($handler1 > 0 && $handler2 > 0){
              echo "<div class='result'><div class='title'><h1>The results:</h1></div>";
+
             //The random event that influences calculations is handled through a polymorphism with the randomEvent object
             $Winner = battle($Army1, $Army2, $randomEvent, $log);
+            
             if($Winner->getName() != "Neither"){
                 echo "<h1> The <span>";
             }
@@ -65,7 +68,7 @@ switch($randomEventIndex){
             echo "<br><button onclick='logVisibility()'>LOG</button><br>";
             echo $log;
         }
-
+ 
         else {
             customError("Entered impossible amount of soldiers!");
         }
@@ -75,6 +78,8 @@ switch($randomEventIndex){
 
 
 </body>
+
+</html>
 
 
 <script>
