@@ -21,13 +21,13 @@
     <form method="get" action="battle.php">
             <div class="inputContainer">
                 <label for="Army1">Please enter the number of soldiers in the <span>first</span> army:</label>
-                <input type="number" id="Army1" name="Army1" required/><br/>
+                <input type="number" id="Army1" name="Army1" required max="1000000"/><br/>
                 <span id="Army1MSG"></span> <br>
             </div>
 
             <div class="inputContainer">
                 <label for="Army2">Please enter the number of soldiers in the <span>second</span> army:</label>
-                <input type="number" id="Army2" name="Army2" required/><br/>
+                <input type="number" id="Army2" name="Army2" required max="1000000"/><br/>
                 <span id="Army2MSG"></span> <br>
             </div>
             
