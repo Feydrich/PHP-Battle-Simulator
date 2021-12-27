@@ -79,7 +79,7 @@ function battle(Army $first, Army $second, RandomEvent $event, String &$log){
     }
 
     if($second->getInitiative() > $first->getInitiative()){
-        // If I swap the values of first and second in one if() statement I can avoid needless if()s in the $event->influence() while 
+        // If I swap the values of first and second army in one if() statement I can avoid needless if()s in the $event->influence() while() 
         swap($first, $second);
     }
 

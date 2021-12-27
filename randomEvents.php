@@ -27,11 +27,11 @@ class NoEvent extends RandomEvent {
                 $sizeOfFirst = $A->getSize();
                 $sizeOfSecond = $B->getSize();
 
-                $damage = random_int($sizeOfFirst/10, $sizeOfFirst/4);
+                $damage = random_int($sizeOfFirst/2, $sizeOfFirst);
                 $log .= "The " . $A->getName() . " army (Soldiers: " . $sizeOfFirst . ") attacked first! Causing " . $damage . " casualties!<br>";
                 $B->setSize($sizeOfSecond - $damage);
 
-                $damage = random_int($sizeOfSecond/10, $sizeOfSecond/4);
+                $damage = random_int($sizeOfSecond/2, $sizeOfSecond);
                 $log .= "The " . $B->getName() . " army (Soldiers: " . $sizeOfSecond . ") then counter attacked! Causing " . $damage . " casualties!<br>";       
                 $A->setSize($sizeOfFirst - $damage);
                 $i += 1;
@@ -61,14 +61,14 @@ class Generals extends RandomEvent {
             $sizeOfFirst = $A->getSize();
             $sizeOfSecond = $B->getSize();
 
-            $damage = random_int($sizeOfFirst/4, $sizeOfFirst/2) + $general1;
+            $damage = random_int($sizeOfFirst/2, $sizeOfFirst) + $general1;
 
             $log .= "The " . $A->getName() . " army (Soldiers: " . $sizeOfFirst . ") attacked first! Causing " . $damage  .
             " casualties!<br>The general added: " . $general1 . "<br>";
             
             $B->setSize($sizeOfSecond - $damage);
 
-            $damage = random_int($sizeOfSecond/4, $sizeOfSecond/2) + $general2;
+            $damage = random_int($sizeOfSecond/2, $sizeOfSecond) + $general2;
 
             $log .= "The " . $B->getName() . " army (Soldiers: " . $sizeOfSecond . ") then counter attacked! Causing " . $damage .
             " casualties!<br>The general added: " . $general2 . "<br>";       
@@ -99,11 +99,11 @@ class MassConfusion extends RandomEvent {
             $sizeOfFirst = $A->getSize();
             $sizeOfSecond = $B->getSize();
 
-            $damage = random_int($sizeOfFirst/6, $sizeOfFirst/2);
+            $damage = random_int($sizeOfFirst/2, $sizeOfFirst);
             $log .= "The " . $A->getName() . " army (Soldiers: " . $sizeOfFirst . ") attacked first! Causing " . $damage . " casualties!<br>";
             $B->setSize($sizeOfSecond - $damage);
 
-            $damage = random_int($sizeOfSecond/6, $sizeOfSecond/2);
+            $damage = random_int($sizeOfSecond/2, $sizeOfSecond);
             $log .= "The " . $B->getName() . " army (Soldiers: " . $sizeOfSecond . ") then counter attacked! Causing " . $damage . " casualties!<br>";       
             $A->setSize($sizeOfFirst - $damage);
             $i += 1;
