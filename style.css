@@ -1,0 +1,74 @@
+*{
+    margin: 0 auto;
+    font-family: helvetica;
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+}
+
+.surface{    
+    height: 95vh;    
+    text-align: center;
+    animation: fade s;
+}
+
+.title{
+    animation: float 3s;
+    /*border: 3px solid red;*/
+    margin-top: 10vh;
+    height: 20vh;
+    text-align: center;
+    
+}
+
+.inputContainer{
+    float:left;
+    margin-top: 20vh;
+    width: 50%;
+    height: 20vh;
+}
+
+form{
+    animation: float 2s;
+}
+
+span{
+    color: red;
+}
+
+.result{
+    animation: float 2s;
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.log{
+    visibility: hidden;
+}
+
+
+@keyframes float {
+	0% {
+		opacity:0;
+		transform: translatey(-100px);
+	}
+	
+	100% {
+		opacity:1;
+		transform: translatey(0px);
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity:0;
+	}
+	
+	100% {
+		opacity:1;
+	}
+}
+
+
+
