@@ -10,7 +10,7 @@ $Army2 = new Army("second", $handler2);
 $Winner = new Army();
 $log = "";
 
-// Selecting 
+// Selecting a random event
 $randomEventIndex = random_int(1,4);
 switch($randomEventIndex){
     case 1:
@@ -52,7 +52,7 @@ switch($randomEventIndex){
         if($handler1 > 0 && $handler2 > 0){
              echo "<div class='result'><div class='title'><h1>The results:</h1></div>";
 
-            //The random event that influences calculations is handled through a polymorphism with the randomEvent object
+            //The random event that influences calculations is handled through polymorphism with the randomEvent object
             $Winner = battle($Army1, $Army2, $randomEvent, $log);
             
             if($Winner->getName() != "Neither"){
