@@ -8,7 +8,6 @@
 .surface{    
     height: 95vh;    
     text-align: center;
-    animation: fade s;
 }
 
 .title{
