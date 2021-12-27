@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/>		
 		<title>Two Armies Assignment</title>
 	</head>
-</html>
 
 <body>
 <div class="surface">
@@ -36,3 +35,4 @@
     </form>
 </div>
 </body>
+</html>
