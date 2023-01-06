@@ -5,7 +5,7 @@
 		<meta name="author" content="Filip Vasiljević"/>
 		<meta name="description" content="The Battle of 2 Armies Assignment"/>		
 		<link rel="stylesheet" type="text/css" href="style.css"/>		
-		<title>Two Armies Assignment</title>
+		<title>PHP Battle Simulator</title>
 	</head>
 
 <body>
